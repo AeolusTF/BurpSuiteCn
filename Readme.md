@@ -13,5 +13,10 @@ java -javaagent:BurpSuiteCn.jar -Xbootclasspath/p:burp-loader-keygen.jar  -Xmx10
 Windwos 下加载 burp-loader-keygen.jar
 
 需要指定编码否则会乱码！！！
-
 java -Dfile.encoding=utf-8 -javaagent:BurpSuiteCn.jar -Xbootclasspath/p:burp-loader-keygen.jar  -Xmx1024m -jar burpsuite_pro_v1.x.x.jar
+
+自定义翻译规则
+
+包内自带翻译包。 在同目录下新建cn.txt写入一下内容如： 注意一下 \t 是分割符， 左边是需要匹配的 右边是替换的 支持正则表达式。
+Proxy \t 代理 
+The analysis is based on a sample of ([0-9]+) tokens?. Based on the sample size, the reliability of the results is: (.*)    分析$1基于令牌样本。 根据样本量，可靠性如下： $2
